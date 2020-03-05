@@ -1,8 +1,16 @@
 import React from 'react';
-import PropTypes from "prop-types"
-import {Grid, AppBar, Tabs, Tab, Typography, Box } from "@material-ui/core"
-import Home from "./_navtabs/Home"
-import MainStyle from "../_styles/mainStyle"
+import PropTypes from "prop-types";
+import {Grid, AppBar, Tabs, Tab, Typography, Box } from "@material-ui/core";
+
+import Home from "./_navtabs/Home";
+import Mission from "./_navtabs/Mission";
+import Events from "./_navtabs/Events";
+import Contact from "./_navtabs/Contact";
+import Volunteer from "./_navtabs/Volunteer";
+import History from "./_navtabs/History";
+
+import MainStyle from "../_styles/mainStyle";
+
 
 const TabPanel = (props) => {
     const {index, value, children, ...other} = props;
@@ -48,11 +56,11 @@ const NavBar = () => {
                 <TabPanel value = {value} index = {0}>
                     <Home />
                 </TabPanel>
-                <TabPanel value = {value} index = {1}>Mission</TabPanel>
-                <TabPanel value = {value} index = {2}>History</TabPanel>
-                <TabPanel value = {value} index = {3}>Events</TabPanel>
-                <TabPanel value = {value} index = {4}>Volunteer</TabPanel>
-                <TabPanel value = {value} index = {5}>Contact</TabPanel>
+                <TabPanel value = {value} index = {1}><Mission /></TabPanel>
+                <TabPanel value = {value} index = {2}> <History /> </TabPanel>
+                <TabPanel value = {value} index = {3}> <Events /> </TabPanel>
+                <TabPanel value = {value} index = {4}> <Volunteer/> </TabPanel>
+                <TabPanel value = {value} index = {5}> <Contact /> </TabPanel>
                 <TabPanel value = {value} index = {6}>Blog</TabPanel>
         </div>
     );
