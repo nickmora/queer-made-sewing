@@ -1,6 +1,6 @@
 import React from 'react';
 import mainStyle from "../_styles/mainStyle";
-const backgroundImage = require("../imgs/sewing_machine_sample.jpg");
+const backgroundImage = require("../imgs/QM_logo_2.svg");
 
 
 const Banner = () => {
